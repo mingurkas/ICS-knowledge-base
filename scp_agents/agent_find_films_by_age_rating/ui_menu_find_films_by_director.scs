@@ -1,0 +1,17 @@
+ui_menu_find_film_by_age_rating  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_film_by_age_rating  => nrel_main_idtf: [Найти фильмы у которых определённый возрастной рейтинг] (* <- lang_ru;; *);;
+ui_menu_find_film_by_age_rating  => nrel_main_idtf: [Find movies that have a certain age rating] (* <- lang_en;; *);;
+ui_menu_find_film_by_age_rating  => ui_nrel_command_template:
+	[*
+		question_scp_find_film_by_age_rating _-> ._question_scp_find_film_by_age_rating_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_film_by_age_rating_instance _<- question;;
+
+	*];;
+
+ui_menu_find_film_by_age_rating  => ui_nrel_command_lang_template: [Найденные фильмы] (* <- lang_ru;; *);;
+ui_menu_find_film_by_age_rating  => ui_nrel_command_lang_template: [Films] (* <- lang_en;; *);;
+

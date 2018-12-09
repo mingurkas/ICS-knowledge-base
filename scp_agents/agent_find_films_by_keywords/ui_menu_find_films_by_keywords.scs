@@ -1,0 +1,17 @@
+ui_menu_find_film_by_keywords  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_film_by_keywords  => nrel_main_idtf: [Найти фильмы по ключевому слову] (* <- lang_ru;; *);;
+ui_menu_find_film_by_keywords  => nrel_main_idtf: [Find movies by keywords] (* <- lang_en;; *);;
+ui_menu_find_film_by_keywords  => ui_nrel_command_template:
+	[*
+		question_scp_find_film_by_keywords _-> ._question_scp_find_film_by_keywords_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_film_by_keywords_instance _<- question;;
+
+	*];;
+
+ui_menu_find_film_by_keywords  => ui_nrel_command_lang_template: [Найденные фильмы] (* <- lang_ru;; *);;
+ui_menu_find_film_by_keywords  => ui_nrel_command_lang_template: [Films] (* <- lang_en;; *);;
+
